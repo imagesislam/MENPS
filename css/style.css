@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6, figure {
   content: '';
   width: 100%;
   height: 2px;
-  background: #66D37E;
+  background: #ff9a76;
   margin: 0 auto;
   opacity: 0;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
