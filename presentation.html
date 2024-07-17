@@ -417,6 +417,10 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         height: 270px;
     }
+    .card a img {
+        height: 160px;
+        width: 100%;
+    }
     .card:hover {
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     }
@@ -425,6 +429,20 @@
         padding: 20px;
         text-align: center;
         
+    }
+    .gallerie {
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+
+    }
+    .gallerie:hover {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+    .card-body div {
+        height: 50px;
     }
     .card-title {
         font-size: 1.25rem;
@@ -687,7 +705,7 @@ window.onclick = function(event) {
 
 
 <div class=" text-center mb-3" style="width: 100%;border-radius: 20px;">
-    <div class="card-body" style="border-radius: 20px;">
+    <div class="gallerie" style="border-radius: 20px;">
         <a href="gallerie.html">
         <h2 style="color:#f46e27;">معرض الصور</h2></a><hr>
         <div class="container">
@@ -722,17 +740,10 @@ window.onclick = function(event) {
                                             </div>
                             
                                      </div>
-                                     <style>
-                                        #pdf-content {
-                                            width: 650px;
-                                            height: 100vh;
-                                            border: none;
-                                        }
-                                    </style>
                                      <div class="col-md-7" style="margin-top:15px; border-radius: 20px;">
                                         <div class="card combined-card" style="width: 100%; border-radius: 20px;">
                                             <div class="card-body" style="padding-top: 30px;border-radius: 20px;">
-                                                <a href="publications.html">
+                                                <a href="publications.html" >
                                                     <img src="images/logoaccueil.jpg" alt="..." style="width: 100%; border-radius: 20px 20px 0 0;">
                                                 </a>
                                                 <div style="width: 100%; border-radius: 20px;padding-top: 18px;">
@@ -749,23 +760,21 @@ window.onclick = function(event) {
                                             </div>
                                         </div>
                                     
-                                        <div  class="text-center mb-3" style="width: 100%; border-radius: 20px;">
-                                            <div class="card-body" style="border-radius: 20px;">
-                                            <a class="combined-card" href="publications.pdf" target="_blank">
-                                                <div  style="width: 100%; overflow: hidden;">
-                                                    <div>
+                                        <div class="text-center mb-3" style="width: 100%; border-radius: 20px;">
+                                            <div class="gallerie" style="border-radius: 20px;">
+                                                <a class="combined-card" href="publications.pdf" target="_blank">
+                                                    <div  style="width: 100%; overflow: hidden;">
                                                         <div>
-                                                            <div style="border-radius: 20px;width: 100%; overflow: hidden;">
-                                                                <iframe src="presentation.pdf#toolbar=0&view=FitH" width="100%" height="745vh" style="border: none;"></iframe>
+                                                            <div>
+                                                                <div style="border-radius: 20px;width: 100%; overflow: hidden;">
+                                                                    <iframe src="presentation.pdf#toolbar=0&view=FitH" width="100%" height="745vh" style="border: none;"></iframe>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </a>
+                                                </a>
+                                            </div>
                                         </div>
-                                        </div>
-                                        
-                                        
 <style>/* Custom styles for the redesigned section */
 
     .card {
@@ -929,6 +938,7 @@ window.onclick = function(event) {
                                                 color: white;
                                                 font-size: 13px; /* Réduction légère de la taille de la police */
                                                 cursor: pointer;
+                                                width: 30%;
                                             }
                                             .input-group button:hover {
                                                 background-color: #ff8558;
